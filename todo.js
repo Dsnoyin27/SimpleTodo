@@ -1,4 +1,4 @@
-let taskInput = document.getElementById('new-task'); //Add a new task.
+let taskInput = document.getElementById('new-todo'); //Add a new task.
 let addButton = document.getElementsByTagName('button')[0]; //first button
 let incompleteTaskHolder = document.getElementById('incomplete-tasks'); //ul of #incomplete-tasks
 let completedTasksHolder = document.getElementById('completed-tasks'); //completed-tasks
@@ -37,7 +37,7 @@ let addTask = function() {
   if (taskInput.value === '') {
     deleteTask(taskInput.value);
   } else {
-    //Create a new list item with the text from the #new-task:
+    //Create a new list item with the text from the #new-todo:
     let listItem = createNewTaskElement(taskInput.value);
 
     //Append listItem to incompleteTaskHolder
